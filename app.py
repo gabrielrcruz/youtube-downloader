@@ -32,7 +32,6 @@ def download_video():
         print(f"Erro: {e}")
         return jsonify({"error": "Erro ao baixar o vídeo"}), 500
 
-# Rodar com host e porta corretos pro Render
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host="0.0.0.0", port=port)
